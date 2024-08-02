@@ -7,6 +7,21 @@ To use or clone  the project : git clone https://github.com/Shantanu-tec/Stories
 # Architecture followed :-
 MVVM With Dagger-Hilt with optimizable Background task
 
+`kotlin`
+
+      @HiltAndroidApp
+      class BaseAppClass : Application() 
+
+      @Module
+      @InstallIn(SingletonComponent::class)
+      class AppModule  //For retrofit Injection
+
+      @HiltViewModel
+      class DataViewModel @Inject constructor(
+      private val repository: ApiRepository
+      ) : ViewModel() // For ViewModel Injection
+
+
 # AndroidJUnit
 
 `kotlin`
