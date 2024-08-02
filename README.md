@@ -34,3 +34,22 @@ MVVM With Dagger-Hilt with optimizable Background task
         onView(withId(R.id.storyViewPager)).perform(ViewPager2Actions.scroll(ViewPager2Actions.RIGHT))
     }
 
+
+# Image Caching Strategy
+
+`kotllin`
+
+        Glide.with(context)
+            .load(story.getResource())
+            .diskCacheStrategy(DiskCacheStrategy.All)
+            .skipMemoryCache(false)
+            .centerCrop()
+            .dontAnimate()
+            .placeholder(imageContentView.drawable)
+            .thumbnail(Glide
+                .with(context)
+                .load(oldStoryItem.getResource())
+                .centerCrop())
+            .listener(loadListener)
+            .into(imageContentView)
+
