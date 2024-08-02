@@ -37,7 +37,7 @@ MVVM With Dagger-Hilt with optimizable Background task
 
 # Image Caching Strategy
 
-`kotllin`
+`kotlin`
 
         Glide.with(context)
             .load(story.getResource())
