@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".story.fragment.InstaStoryFragment">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/viewPager"/>
+    <com.example.stories.story.custom.Stories
+        android:id="@+id/stories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:progressBarBackgroundColor="@color/progressGray"
+        app:progressBarColor="@color/white"
+        app:storyDuration="5"
+        android:background="@color/black"
+        app:loadingViewProgressColor="@color/purple_700" />
+
+
+</RelativeLayout>

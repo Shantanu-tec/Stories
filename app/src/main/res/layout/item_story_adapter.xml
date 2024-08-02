@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainRl"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        app:shapeAppearanceOverlay="@style/roundedCorner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shantanu"
+        android:textSize="14sp"
+        android:id="@+id/profileName"
+        android:textColor="@color/black"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
