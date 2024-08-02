@@ -10,8 +10,6 @@ MVVM With Dagger-Hilt with optimizable Background task
 # AndroidJUnit
 
 `kotlin`
-@RunWith(AndroidJUnit4::class)
-class ExampleInstrumentedTest {
 
     @get:Rule
     val activityRule = ActivityScenarioRule(MainActivity::class.java)
@@ -35,4 +33,4 @@ class ExampleInstrumentedTest {
         Thread.sleep(500)
         onView(withId(R.id.storyViewPager)).perform(ViewPager2Actions.scroll(ViewPager2Actions.RIGHT))
     }
-}
+
