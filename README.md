@@ -49,6 +49,13 @@ MVVM With Dagger-Hilt with optimizable Background task
         onView(withId(R.id.storyViewPager)).perform(ViewPager2Actions.scroll(ViewPager2Actions.RIGHT))
     }
 
+     ******** Do this if Device Animation is on*********
+    IdlingPolicies.setMasterPolicyTimeout(15,TimeUnit.SECONDS)
+    IdlingPolicies.setIdlingResourceTimeout(15,TimeUnit.SECONDS)
+    ****************************************************
+
+    Better to go with Device AnimationScale to off
+
 
 # Image Caching Strategy
 
